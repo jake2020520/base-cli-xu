@@ -1,11 +1,11 @@
-# `@imooc-cli-dev/request`
+# `@base-cli-xu/request`
 
 > TODO: description
 
 ## Usage
 
 ```
-const request = require('@imooc-cli-dev/request');
+const request = require('@base-cli-xu/request');
 
 // TODO: DEMONSTRATE API
 ```

@@ -44,7 +44,7 @@ class Package {
   }
 
   /**
-   * @description @imooc-cli/init ---》 拼接 _@imooc-cli_init@1.1.3@@imooc-cli
+   * @description @base-cli-xu/init ---》 拼接 _@base-cli-xu_init@1.1.3@@base-cli-xu
    */
   get cacheFilePath() {
     return path.resolve(

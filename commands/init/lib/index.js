@@ -246,10 +246,10 @@ class InitCommand extends Command {
     this.templateInfo = this.template.find(
       (template) => template.npmName === projectTemplate
     );
-    const targetPath = path.resolve(userHome, ".imooc-cli-dev", "template");
+    const targetPath = path.resolve(userHome, ".base-cli-xu", "template");
     const storeDir = path.resolve(
       userHome,
-      ".imooc-cli-dev",
+      ".base-cli-xu",
       "template",
       "node_modules"
     );

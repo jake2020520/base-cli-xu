@@ -2,8 +2,8 @@
 
 const axios = require("axios");
 
-const BASE_URL = process.env.IMOOC_CLI_BASE_URL
-  ? process.env.IMOOC_CLI_BASE_URL
+const BASE_URL = process.env.BASE_CLI_XU_URL
+  ? process.env.BASE_CLI_XU_URL
   : "http://book.youbaobao.xyz:7001";
 
 const request = axios.create({

@@ -99,7 +99,6 @@ function registerCommand() {
     program.outputHelp();
     console.log();
   }
-
   program.parse(process.argv);
 }
 
@@ -122,7 +121,6 @@ async function checkGlobalUpdate() {
   } catch (error) {
     throw new Error("base-cli-xu版本获取失败");
   }
-
   // 3. 提取所有版本号，比对哪些版本号是大于当前版本号
   // 4. 获取最新的版本号，提示用户更新到该版本
 }

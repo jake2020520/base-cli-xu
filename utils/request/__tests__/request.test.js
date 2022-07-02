@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const request = require('..');
+const request = require("..");
 
-describe('@imooc-cli-dev/request', () => {
-    it('needs tests');
+describe("@base-cli-xu/request", () => {
+  it("needs tests");
 });

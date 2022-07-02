@@ -6,7 +6,6 @@ const Package = require("@base-cli-xu/package");
 
 const SETTINGS = {
   init: "@base-cli-xu/init",
-  // init: "@imooc-cli/init",
 };
 
 const CACHE_DIR = "dependencies/";

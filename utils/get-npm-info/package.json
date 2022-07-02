@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "get npm info",
   "author": "king <jake2020520@gmail.com>",
-  "homepage": "https://github.com/jake2020520/imooc-cli-dev#readme",
+  "homepage": "https://github.com/jake2020520/base-cli-xu#readme",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jake2020520/imooc-cli-dev.git"
+    "url": "git+https://github.com/jake2020520/base-cli-xu.git"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
-    "url": "https://github.com/jake2020520/imooc-cli-dev/issues"
+    "url": "https://github.com/jake2020520/base-cli-xu/issues"
   },
   "dependencies": {
     "axios": "^0.27.2",

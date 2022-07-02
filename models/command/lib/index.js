@@ -6,7 +6,6 @@ const { isObject } = require("@base-cli-xu/utils"); // 颜色
 const LOWEST_NODE_VERSION = "12.0.0";
 class Command {
   constructor(argv) {
-    console.log("command constructor", argv);
     this._argv = argv;
     if (!argv) {
       throw new Error("参数不能为空");
@@ -48,7 +47,7 @@ class Command {
     // 第二步，对比最低版本号
     if (!semver.gte(currentVersion, lowestVersion)) {
       throw new Error(
-        colors.red(`imooc-cli 需要按照V${lowestVersion}以上版本 Node`)
+        colors.red(`base-cli-xu 需要按照V${lowestVersion}以上版本 Node`)
       );
     }
   }
