@@ -1,0 +1,38 @@
+{
+  "name": "@imooc-cli-dev-x1/package",
+  "version": "0.1.0",
+  "description": "imooc-cli-dev-x1 package",
+  "author": "king <jake2020520@gmail.com>",
+  "homepage": "https://github.com/jake2020520/imooc-cli-dev#readme",
+  "license": "ISC",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jake2020520/imooc-cli-dev.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/jake2020520/imooc-cli-dev/issues"
+  },
+  "dependencies": {
+    "@imooc-cli-dev-x1/format-path": "file:../../utils/format-path",
+    "@imooc-cli-dev-x1/get-npm-info": "file:../../utils/get-npm-info",
+    "@imooc-cli-dev-x1/utils": "file:../../utils/utils",
+    "fs-extra": "^10.1.0",
+    "npminstall": "^6.3.0",
+    "path-exists": "4.0.0",
+    "pkg-dir": "^5.0.0"
+  }
+}
