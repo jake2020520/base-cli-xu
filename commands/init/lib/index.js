@@ -5,11 +5,11 @@ const userHome = require("user-home");
 const inquirer = require("inquirer");
 const semver = require("semver"); // 版本号对比
 const fse = require("fs-extra");
-const log = require("@imooc-cli-dev-x1/log"); // 颜色
-const { spinnerStart, sleep } = require("@imooc-cli-dev-x1/utils"); // 颜色
-const Command = require("@imooc-cli-dev-x1/command");
-const Package = require("@imooc-cli-dev-x1/package");
-const { exec, execAsync } = require("@imooc-cli-dev-x1/utils");
+const log = require("@base-cli-xu/log"); // 颜色
+const { spinnerStart, sleep } = require("@base-cli-xu/utils"); // 颜色
+const Command = require("@base-cli-xu/command");
+const Package = require("@base-cli-xu/package");
+const { exec, execAsync } = require("@base-cli-xu/utils");
 
 const glob = require("glob");
 const ejs = require("ejs");

@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const package = require('..');
+const package = require("..");
 
-describe('@imooc-cli-dev-x1/package', () => {
-    it('needs tests');
+describe("@base-cli-xu/package", () => {
+  it("needs tests");
 });

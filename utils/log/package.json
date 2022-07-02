@@ -1,7 +1,7 @@
 {
-  "name": "@imooc-cli-dev-x1/log",
+  "name": "@base-cli-xu/log",
   "version": "0.1.0",
-  "description": "imooc-cli-dev-x1 log",
+  "description": "base-cli-xu log",
   "keywords": [
     "log"
   ],

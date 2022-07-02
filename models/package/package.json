@@ -1,7 +1,7 @@
 {
-  "name": "@imooc-cli-dev-x1/package",
+  "name": "@base-cli-xu/package",
   "version": "0.1.0",
-  "description": "imooc-cli-dev-x1 package",
+  "description": "base-cli-xu package",
   "author": "king <jake2020520@gmail.com>",
   "homepage": "https://github.com/jake2020520/imooc-cli-dev#readme",
   "license": "ISC",
@@ -27,9 +27,9 @@
     "url": "https://github.com/jake2020520/imooc-cli-dev/issues"
   },
   "dependencies": {
-    "@imooc-cli-dev-x1/format-path": "file:../../utils/format-path",
-    "@imooc-cli-dev-x1/get-npm-info": "file:../../utils/get-npm-info",
-    "@imooc-cli-dev-x1/utils": "file:../../utils/utils",
+    "@base-cli-xu/format-path": "file:../../utils/format-path",
+    "@base-cli-xu/get-npm-info": "file:../../utils/get-npm-info",
+    "@base-cli-xu/utils": "file:../../utils/utils",
     "fs-extra": "^10.1.0",
     "npminstall": "^6.3.0",
     "path-exists": "4.0.0",

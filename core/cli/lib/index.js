@@ -7,8 +7,8 @@ const colors = require("colors/safe"); // 颜色
 const userHome = require("user-home");
 const pathExists = require("path-exists").sync;
 const commander = require("commander");
-const log = require("@imooc-cli-dev-x1/log");
-const exec = require("@imooc-cli-dev-x1/exec");
+const log = require("@base-cli-xu/log");
+const exec = require("@base-cli-xu/exec");
 const pkg = require("../package.json");
 const constant = require("./const");
 
@@ -110,14 +110,19 @@ async function checkGlobalUpdate() {
   const currentVersion = "1.1.1";
   const npmName = pkg.name;
   // 2. 调用npm API ，获取所有版本号
-  const { getNpmSemverVersion } = require("@imooc-cli-dev-x1/get-npm-info");
-  const lastVersion = await getNpmSemverVersion(currentVersion, npmName);
-  if (lastVersion && semver.gt(lastVersion, currentVersion)) {
-    log.warn(
-      colors.yellow(`请手动更新${npmName},当前版本：${currentVersion},最新版本：${lastVersion}
+  const { getNpmSemverVersion } = require("@base-cli-xu/get-npm-info");
+  try {
+    const lastVersion = await getNpmSemverVersion(currentVersion, npmName);
+    if (lastVersion && semver.gt(lastVersion, currentVersion)) {
+      log.warn(
+        colors.yellow(`请手动更新${npmName},当前版本：${currentVersion},最新版本：${lastVersion}
       更新命令： npm install  -g ${npmName}`)
-    );
+      );
+    }
+  } catch (error) {
+    throw new Error("base-cli-xu版本获取失败");
   }
+
   // 3. 提取所有版本号，比对哪些版本号是大于当前版本号
   // 4. 获取最新的版本号，提示用户更新到该版本
 }

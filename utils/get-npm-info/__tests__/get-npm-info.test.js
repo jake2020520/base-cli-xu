@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const getNpmInfo = require('..');
+const getNpmInfo = require("..");
 
-describe('@imooc-cli-dev-x1/get-npm-info', () => {
-    it('needs tests');
+describe("@base-cli-xu/get-npm-info", () => {
+  it("needs tests");
 });

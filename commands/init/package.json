@@ -1,7 +1,7 @@
 {
-  "name": "@imooc-cli-dev-x1/init",
+  "name": "@base-cli-xu/init",
   "version": "0.1.0",
-  "description": "imooc-cli-dev-x1 init",
+  "description": "base-cli-xu init",
   "author": "king <jake2020520@gmail.com>",
   "homepage": "https://github.com/jake2020520/imooc-cli-dev#readme",
   "license": "ISC",
@@ -27,11 +27,11 @@
     "url": "https://github.com/jake2020520/imooc-cli-dev/issues"
   },
   "dependencies": {
-    "@imooc-cli-dev-x1/command": "file:../../models/command",
-    "@imooc-cli-dev-x1/log": "file:../../utils/log",
-    "@imooc-cli-dev-x1/package": "file:../../models/package",
-    "@imooc-cli-dev-x1/request": "file:../../utils/request",
-    "@imooc-cli-dev-x1/utils": "file:../../utils/utils",
+    "@base-cli-xu/command": "file:../../models/command",
+    "@base-cli-xu/log": "file:../../utils/log",
+    "@base-cli-xu/package": "file:../../models/package",
+    "@base-cli-xu/request": "file:../../utils/request",
+    "@base-cli-xu/utils": "file:../../utils/utils",
     "ejs": "^2.7.4",
     "fs-extra": "^9.0.1",
     "glob": "^8.0.3",

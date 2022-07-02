@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const exec = require('..');
+const exec = require("..");
 
-describe('@imooc-cli-dev-x1/exec', () => {
-    it('needs tests');
+describe("@base-cli-xu/exec", () => {
+  it("needs tests");
 });

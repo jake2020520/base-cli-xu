@@ -1,11 +1,11 @@
-# `@imooc-cli-dev-x1/get-npm-info`
+# `@base-cli-xu/get-npm-info`
 
 > TODO: description
 
 ## Usage
 
 ```
-const getNpmInfo = require('@imooc-cli-dev-x1/get-npm-info');
+const getNpmInfo = require('@base-cli-xu/get-npm-info');
 
 // TODO: DEMONSTRATE API
 ```

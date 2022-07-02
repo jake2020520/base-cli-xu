@@ -1,11 +1,11 @@
 "use strict";
 const path = require("path");
-const log = require("@imooc-cli-dev-x1/log");
-const { exec: spawn } = require("@imooc-cli-dev-x1/utils");
-const Package = require("@imooc-cli-dev-x1/package");
+const log = require("@base-cli-xu/log");
+const { exec: spawn } = require("@base-cli-xu/utils");
+const Package = require("@base-cli-xu/package");
 
 const SETTINGS = {
-  init: "@imooc-cli-dev-x1/init",
+  init: "@base-cli-xu/init",
   // init: "@imooc-cli/init",
 };
 
@@ -55,7 +55,7 @@ async function exec() {
   }
 
   const rootFile = pkg.getRootFilePath();
-  log.verbose("rootFile", rootFile);
+  log.verbose("rootFile: ", rootFile);
   if (rootFile) {
     // console.log("---arguments--", arguments);
     // 异步的，重新catch

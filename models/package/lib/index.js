@@ -5,12 +5,12 @@ const fse = require("fs-extra");
 const pathExists = require("path-exists").sync;
 
 const pkgDir = require("pkg-dir").sync; // 找到 项目里面的package.json
-const { isObject } = require("@imooc-cli-dev-x1/utils");
-const formatPath = require("@imooc-cli-dev-x1/format-path");
+const { isObject } = require("@base-cli-xu/utils");
+const formatPath = require("@base-cli-xu/format-path");
 const {
   getDefaultRegistry,
   getNpmLatestVersion,
-} = require("@imooc-cli-dev-x1/get-npm-info");
+} = require("@base-cli-xu/get-npm-info");
 class Package {
   constructor(options) {
     if (!options) {

@@ -1,12 +1,12 @@
 "use strict";
 const semver = require("semver"); // 版本号对比
 const colors = require("colors/safe");
-const log = require("@imooc-cli-dev-x1/log"); // 颜色
-const { isObject } = require("@imooc-cli-dev-x1/utils"); // 颜色
+const log = require("@base-cli-xu/log"); // 颜色
+const { isObject } = require("@base-cli-xu/utils"); // 颜色
 const LOWEST_NODE_VERSION = "12.0.0";
 class Command {
   constructor(argv) {
-    // console.log("command constructor", argv);
+    console.log("command constructor", argv);
     this._argv = argv;
     if (!argv) {
       throw new Error("参数不能为空");

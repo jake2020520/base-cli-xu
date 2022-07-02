@@ -1,5 +1,5 @@
 {
-  "name": "@imooc-cli-dev-x1/core",
+  "name": "@base-cli-xu/core",
   "version": "0.1.0",
   "description": "> TODO: description",
   "author": "king <jake2020520@gmail.com>",
@@ -7,7 +7,7 @@
   "license": "ISC",
   "main": "lib/core.js",
   "bin": {
-    "imooc-cli-dev-xu": "bin/index.js"
+    "base-cli-xu": "bin/index.js"
   },
   "directories": {
     "lib": "lib",
@@ -21,11 +21,11 @@
     "url": "https://gitee.com/XUDESONG/learn.git"
   },
   "dependencies": {
-    "@imooc-cli-dev-x1/exec": "file:../exec",
-    "@imooc-cli-dev-x1/get-npm-info": "file:../../utils/get-npm-info",
-    "@imooc-cli-dev-x1/init": "file:../../commands/init",
-    "@imooc-cli-dev-x1/log": "file:../../utils/log",
-    "@imooc-cli-dev-x1/utils": "file:../../utils/utils",
+    "@base-cli-xu/exec": "file:../exec",
+    "@base-cli-xu/get-npm-info": "file:../../utils/get-npm-info",
+    "@base-cli-xu/init": "file:../../commands/init",
+    "@base-cli-xu/log": "file:../../utils/log",
+    "@base-cli-xu/utils": "file:../../utils/utils",
     "colors": "^1.4.0",
     "commander": "^9.3.0",
     "dotenv": "^16.0.1",
