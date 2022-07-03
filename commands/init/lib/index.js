@@ -20,8 +20,18 @@ const TYPE_PROJECT = "project";
 const TYPE_COMPONENT = "component";
 const TEMPLATE_TYPE_NORMAL = "normal";
 const TEMPLATE_TYPE_CUSTOM = "custom";
-const WHITE_COMMAND = ["npm", "cnpm"];
+const WHITE_COMMAND = ["npm", "cnpm", "yarn"];
 const PROJECT_INFO = [
+  {
+    name: "webpack5-vue3-ts标注模板",
+    npmName: "webpack5-vue3-ts-xu",
+    version: "1.0.0",
+    type: "normal",
+    installCommand: "yarn",
+    startCommand: "yarn dev",
+    tag: ["project"],
+    ignore: ["**/public/**"],
+  },
   {
     name: "vue2标注模板",
     npmName: "template-xu-vue2",

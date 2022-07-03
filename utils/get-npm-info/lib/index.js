@@ -54,16 +54,8 @@ async function getNpmSemverVersion(baseVersion, npmName, registry) {
   const versions = await getNpmVersions(npmName, registry);
   // console.log("versions: ", versions);
   // TODO: 便于本地调试
-  //   const newVersions = getSemverVersions(baseVersion, versions);
-  const newVersions = getSemverVersions(baseVersion, [
-    "1.0.5",
-    "1.1.1",
-    "1.1.0",
-    "1.0.4",
-    "1.0.2",
-    "1.0.1",
-  ]);
-  // console.log("newVersions", baseVersion, newVersions);
+  const newVersions = getSemverVersions(baseVersion, versions);
+  console.log("@base-cli-xu/core线上版本：", versions);
   if (newVersions && newVersions.length > 0) {
     return newVersions[0];
   }

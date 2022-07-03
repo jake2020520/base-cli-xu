@@ -104,9 +104,9 @@ function registerCommand() {
 
 async function checkGlobalUpdate() {
   // 1. 获取当前版本号和模块名
-  // const currentVersion = pkg.version;
+  const currentVersion = pkg.version;
   // TODO: 便于本地调试
-  const currentVersion = "1.1.1";
+  // const currentVersion = "1.1.1";
   const npmName = pkg.name;
   // 2. 调用npm API ，获取所有版本号
   const { getNpmSemverVersion } = require("@base-cli-xu/get-npm-info");
