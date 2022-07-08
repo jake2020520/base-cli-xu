@@ -112,6 +112,11 @@ async function checkGlobalUpdate() {
   const { getNpmSemverVersion } = require("@base-cli-xu/get-npm-info");
   try {
     const lastVersion = await getNpmSemverVersion(currentVersion, npmName);
+    log.verbose(
+      "cli version:lastVersion:currentVersion ",
+      lastVersion,
+      currentVersion
+    );
     if (lastVersion && semver.gt(lastVersion, currentVersion)) {
       log.warn(
         colors.yellow(`请手动更新${npmName},当前版本：${currentVersion},最新版本：${lastVersion}
