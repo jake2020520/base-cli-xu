@@ -40,7 +40,7 @@ async function prepare() {
   // 配置环境变量
   checkEnv();
   //  检查软件的更新
-  await checkGlobalUpdate();
+  // await checkGlobalUpdate();
 }
 
 function registerCommand() {
@@ -111,17 +111,7 @@ async function checkGlobalUpdate() {
   // 2. 调用npm API ，获取所有版本号
   const { getNpmSemverVersion } = require("@base-cli-xu/get-npm-info");
   try {
-    function sleep(timeout = 1000) {
-      return new Promise((resolve) => setTimeout(resolve, timeout));
-    }
-    await sleep(10000);
-    log.verbose("cli version:lcurrentVersion ", currentVersion);
     const lastVersion = await getNpmSemverVersion(currentVersion, npmName);
-    log.verbose(
-      "cli version:lastVersion:currentVersion ",
-      lastVersion,
-      currentVersion
-    );
     if (lastVersion && semver.gt(lastVersion, currentVersion)) {
       log.warn(
         colors.yellow(`请手动更新${npmName},当前版本：${currentVersion},最新版本：${lastVersion}
