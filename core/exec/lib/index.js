@@ -20,8 +20,8 @@ async function exec() {
   const cmdObj = arguments[arguments.length - 1];
   const cdmName = cmdObj.name(); //cmdObj._name 也可以取到
   const packageName = SETTINGS[cdmName];
-  const packageVersion = "latest";
-  // const packageVersion = "1.1.0";
+  const packageVersion = "latest"; // 用此，逻辑
+  // const packageVersion = "1.1.0";用此，逻辑才是完整
 
   // 目标路径不存在，生成缓存路径
   if (!targetPath) {
@@ -36,7 +36,7 @@ async function exec() {
       packageName,
       packageVersion,
     });
-    if (await pkg.exists()) {
+    if ((await pkg.exists()) && packageVersion != "latest") {
       // 更新
       await pkg.update();
     } else {

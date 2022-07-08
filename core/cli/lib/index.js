@@ -107,7 +107,7 @@ async function checkGlobalUpdate() {
   const currentVersion = pkg.version;
   // TODO: 便于本地调试
   // const currentVersion = "1.1.1";
-  const npmName = pkg.name;
+  const npmName = pkg.name; // @base-cli-xu/core 的版本
   // 2. 调用npm API ，获取所有版本号
   const { getNpmSemverVersion } = require("@base-cli-xu/get-npm-info");
   try {

@@ -274,6 +274,7 @@ class InitCommand extends Command {
       const spinner = spinnerStart("正在下载模板...");
       await sleep();
       try {
+        // 下载时，直接下载配置的对应版本，不用到最新
         await templateNpm.install();
       } catch (e) {
         throw e;
