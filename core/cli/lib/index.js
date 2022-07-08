@@ -40,7 +40,7 @@ async function prepare() {
   // 配置环境变量
   checkEnv();
   //  检查软件的更新
-  // await checkGlobalUpdate();
+  await checkGlobalUpdate();
 }
 
 function registerCommand() {
