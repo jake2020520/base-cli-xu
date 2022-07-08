@@ -75,6 +75,7 @@ async function exec() {
         }
       });
       args[args.length - 1] = o;
+      // /Users/king/.base-cli-xu/dependencies/node_modules/_@base-cli-xu_init@0.1.3@@base-cli-xu/init/lib/index.js
       const code = `require('${rootFile}')(${JSON.stringify(args)})`;
       const child = spawn("node", ["-e", code], {
         cwd: process.cwd(),
