@@ -111,6 +111,11 @@ async function checkGlobalUpdate() {
   // 2. 调用npm API ，获取所有版本号
   const { getNpmSemverVersion } = require("@base-cli-xu/get-npm-info");
   try {
+    function sleep(timeout = 1000) {
+      return new Promise((resolve) => setTimeout(resolve, timeout));
+    }
+    await sleep(10000);
+    log.verbose("cli version:lcurrentVersion ", currentVersion);
     const lastVersion = await getNpmSemverVersion(currentVersion, npmName);
     log.verbose(
       "cli version:lastVersion:currentVersion ",
