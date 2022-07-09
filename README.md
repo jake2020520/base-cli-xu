@@ -11,7 +11,11 @@
   线上：https://www.npmjs.com/settings/jake2020520/packages
 - **使用流程**
   安装脚手架：npm i -g @base-cli-xu/core
-  使用脚手架：base-cli-xu init
+  使用脚手架的几种方式
+  base-cli-xu init
+  base-cli-xu init myProItem --debug —force
+  base-cli-xu init --debug
+  base-cli-xu init -tp /Users/king/Documents/imooc-cli-dev/base-cli-xu/commands/init/lib --debug --force myPro
 
 - **脚手架本地 link 标注流程**
   cd base-cli-xu/core/cli
