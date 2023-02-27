@@ -23,6 +23,16 @@ const TEMPLATE_TYPE_CUSTOM = "custom";
 const WHITE_COMMAND = ["npm", "cnpm", "yarn"];
 const PROJECT_INFO = [
   {
+    name: "vite3-vue3-ts标准模板",
+    npmName: "vite3-vue3-ts-xu",
+    version: "0.1.0",
+    type: "normal",
+    installCommand: "yarn",
+    startCommand: "yarn vite:dev",
+    tag: ["project"],
+    ignore: ["**/public/**"],
+  },
+  {
     name: "webpack5-vue3-ts标准模板",
     npmName: "webpack5-vue3-ts-xu",
     version: "1.0.5",
