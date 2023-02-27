@@ -444,7 +444,6 @@ class InitCommand extends Command {
         default: "1.0.0",
         validate: function (v) {
           const done = this.async();
-
           // Do async stuff
           setTimeout(function () {
             if (!!!semver.valid(v)) {
@@ -530,7 +529,7 @@ class InitCommand extends Command {
     fileList = fileList.filter(
       (file) => !file.startsWith(".") && ["node_modules"].indexOf(file) < 0
     );
-    // console.log("isCwdEmpty:00 ", fileList);
+    //
     return !fileList || fileList.length <= 0;
   }
 }
