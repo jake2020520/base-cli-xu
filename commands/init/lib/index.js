@@ -534,7 +534,7 @@ class InitCommand extends Command {
   }
 }
 function init(argv) {
-  // TODO
+  // 
   return new InitCommand(argv);
 }
 
