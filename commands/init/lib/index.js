@@ -6,7 +6,7 @@ const inquirer = require("inquirer");
 const semver = require("semver"); // 版本号对比
 const fse = require("fs-extra");
 const log = require("@base-cli-xu/log"); // 颜色
-const { spinnerStart, sleep } = require("@base-cli-xu/utils"); // 颜色
+const { spinnerStart, sleep } = require("@base-cli-xu/utils"); //
 const Command = require("@base-cli-xu/command");
 const Package = require("@base-cli-xu/package");
 const { exec, execAsync } = require("@base-cli-xu/utils");
@@ -176,7 +176,7 @@ class InitCommand extends Command {
               const filePath = path.join(dir, file);
               return new Promise((resolve1, reject1) => {
                 ejs.renderFile(filePath, projectInfo, {}, (err, res) => {
-                  // console.log("renderFile", err, res);
+                  // console.log("renderFile", err, res)
                   if (err) {
                     reject1(err);
                   } else {
@@ -270,7 +270,7 @@ class InitCommand extends Command {
   }
 
   async downLoadTemplate() {
-    // 1.通过项目模板api获取项目模板信息
+    // 1.通过项目模板api获取项目模板信息2
     // 2.通过egg.js搭建一套后端系统
     // 3. 通过npm存储项目模板
     // 4.将项目模板信息存储到mongodb数据库中
@@ -534,7 +534,7 @@ class InitCommand extends Command {
   }
 }
 function init(argv) {
-  // 
+  //
   return new InitCommand(argv);
 }
 
